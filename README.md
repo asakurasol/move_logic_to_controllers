@@ -128,7 +128,7 @@ Now open up the `products_controller.rb` and add the `create` method with this l
         if @product.save
           format.html { render :action => "create" }
           format.json { render :json => @product }
-        else
+        elsejnm
           format.html { render :action => "new" }
           format.json { render :json => @product.errors, :status => :unprocessable_entity }
         end
